@@ -15,7 +15,13 @@ def create_assignment(name: str, due: str, points: int) -> Dict:
     Returns:
         Assignment as a dictionary.
     """
-    return {}
+    Assignment = {
+        'name': name,
+        'due': due,
+        'points': points
+    }
+
+    return Assignment
 
 
 def create_classroom(course_code: str, course_name: str, period: int, teacher: str) -> Dict:
